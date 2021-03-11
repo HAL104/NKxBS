@@ -1,6 +1,7 @@
 # NKxBS
 サイト名　　：肉のキクチ x Brain Singularity  
-サイト説明　：架空のお肉屋さん「肉のキクチ」と架空のAiベンチャー「Brain Singularity」のコラボレートサイトです。  
+サイト説明　：架空のお肉屋さん「肉のキクチ」と架空のAiベンチャー「Brain Singularity」の  
+　　　　　　　コラボレートサイトです。  
 　　　　　　　このサイトはWordPressのテーマ化、及びオンラインサーバーへの適応も行いました。  
 　　　　　　　→(http://fkt31.starfree.jp/)  
 対象ブラウザ：PC,スマートフォン  
