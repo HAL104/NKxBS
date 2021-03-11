@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset・全体*/
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/**
+ * Makes elements visually invisible but still accessible to screen-readers.
+ *
+ * This Css has been carefully tested to ensure screen-readers can read and
+ * activate (in case of links and buttons) the elements with this class. Please
+ * use caution when changing anything, even seemingly safe ones. For example
+ * changing width from 1 to 0 would prevent TalkBack from activating (clicking)
+ * buttons despite TalkBack reading them just fine. This is because
+ * element needs to have a defined size and be on viewport otherwise TalkBack
+ * does not allow activation of buttons.
+ */
+.visually-hidden {
+  position: fixed !important;
+  /* keep it on viewport */
+  top: 0px !important;
+  left: 0px !important;
+  /* give it non-zero size, VoiceOver on Safari requires at least 2 pixels
+     before allowing buttons to be activated. */
+  width: 4px !important;
+  height: 4px !important;
+  /* visually hide it with overflow and opacity */
+  opacity: 0 !important;
+  overflow: hidden !important;
+  /* remove any margin or padding */
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* ensure no other style sets display to none */
+  display: block !important;
+  visibility: visible !important;
+}
+@media (min-width: 796px) and (max-width: 64em) {
+  .drawer-container {
+    max-width: 785px;
+  }
+}
+@media (min-width: 796px) {
+  .drawer-navbar .drawer-navbar-header {
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    padding: 0;
+    border: 0;
+  }
+  .drawer-navbar .drawer-hamburger {
+    display: none;
+  }
+  .drawer-navbar .drawer-menu {
+    padding: 0;
+  }
+  .drawer-navbar .drawer-menu--right {
+    float: right;
+  }
+  .drawer-navbar .drawer-nav {
+    position: relative;
+    left: 0;
+    overflow: visible;
+    width: auto;
+    height: 3.75rem;
+    padding-top: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .drawer-navbar .drawer-menu li {
+    float: left;
+  }
+  .drawer-navbar .drawer-menu-item {
+    line-height: 3.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+#c {
+  vertical-align: bottom;
+}
+.pb80 {
+  padding-bottom: 80px;
+}
+.pt50 {
+  padding-top: 50px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mb80 {
+  margin-bottom: 80px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.ml5pc{
+	margin-left: 5%;
+}
+.flex {
+  display: flex;
+}
+.flex-cm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents {
+  width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 30px;
+}
+.borld {
+  font-weight: bold;
+}
+.red {
+  color: #f00;
+}
+/*=================nav==================*/
+.drawer-navbar {
+  border: none;
+  background-color: #fff;
+}
+#top .drawer-menu-item span {
+  border-left: 3px solid #ff6347;
+  padding-left: 5px;
+}
+#bs .drawer-menu-item span {
+  border-left: 3px solid #006eb0;
+  padding-left: 5px;
+}
+#mission .drawer-menu-item span {
+  border-left: 3px solid #6B8E23;
+  padding-left: 5px;
+}
+#contact .drawer-menu-item span {
+  border-left: 3px solid #4b0082;
+  padding-left: 5px;
+}
+#bs .drawer-menu li:first-child a, #mission .drawer-menu li:nth-child(2) a, #contact .drawer-menu li:nth-child(3) a {
+  background-color: #eef;
+}
+/*=================nav終わり==================*/
+/*=================top==================*/
+/*top-img*/
+.top-img {
+  position: relative;
+}
+.top-img .flex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.top-big p:nth-last-child(odd) img {
+  width: 40vw;
+  height: auto;
+}
+.top-big p:nth-child(2) img {
+  width: 5vw;
+  height: auto;
+}
+#aori {
+  text-align: center;
+  font-size: 100px;
+  font-family: serif;
+  font-weight: bold;
+}
+/*about*/
+#top h2 {
+  padding-left: 10px;
+  border-left: #ff6347 10px solid;
+}
+.about > p {
+  text-align: center;
+  font-size: 20px;
+}
+/*top-massege*/
+.flex {
+  justify-content: space-around;
+}
+.top-message h3 {
+  font-size: 20px;
+  border-bottom: 2px solid #ff6347;
+}
+.bg-niku {
+  background: url("../img/top/bg_niku.jpg") no-repeat center;
+  background-size: auto 100%;
+}
+.kikuchi-msg section, .bs-msg section {
+  width: 50%;
+}
+.top-message .sign {
+  margin-left: 70%;
+}
+/*=================top終わり==================*/
+/*=================bs==================*/
+#bs-top-h2 {
+  padding-left: 10px;
+  border-left: #006eb0 10px solid;
+}
+.bs-contents-h2 {
+  text-align: center;
+  padding: 10px;
+  border-top: #006eb0 5px double;
+  border-bottom: #006eb0 5px double;
+}
+.bs-top-p {
+  margin-right: 5%;
+}
+.bs-top-bg {
+  background: url("../img/bs/bs-top-bg.jpg") no-repeat center;
+  background-size: auto 100%;
+}
+/* bs-moodal */
+.modaal-content-container {
+  text-align: center;
+}
+.modaal-content-container h3 {
+  font-size: 2rem;
+}
+.inline img {
+  width: 300px;
+}
+.inline:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.inline-head {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: #006eb0 10px solid;
+  border-right: #006eb0 10px solid;
+}
+/*bs-table*/
+#bs-table, .inc th {
+  text-align: center;
+}
+.inc {
+  width: 600px;
+  margin: 0 auto;
+}
+.inc tr:first-child th {
+  padding-top: 30px;
+}
+.inc th, .inc td {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.inc th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+/*=================bs終わり==================*/
+/*=================mission==================*/
+#mission-top-h2 {
+  padding-left: 10px;
+  border-left: #6B8E23 10px solid;
+}
+#our-mission {
+  padding: 10px;
+  border-top: #6B8E23 5px double;
+  border-bottom: #6B8E23 5px double;
+}
+#our-mission, #mission .mission-list {
+  text-align: center;
+}
+#mission .mission-list h3 {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: 2px solid #6B8E23;
+  padding: 0 1.5rem;
+}
+.mission-list > div > h3 {
+  font-size: 5vw;
+}
+.mission-list > div > p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mission main{
+  background: url("../img/mission/head-bg.png") repeat-x bottom;
+}
+/*=================mission終わり==================*/
+/*=================contact==================*/
+#contact h2 {
+  padding-left: 10px;
+  border-left: #4b0082 10px solid;
+}
+/*#contact form*/
+.contact-h2{
+	font-weight: bold;
+}
+form {
+  width: 760px;
+  margin: 0 auto;
+}
+.label {
+  width: 20%;
+  border-left: solid 3px #4b0082;
+}
+.inputs {
+  width: 80%;
+}
+input[type="text"], input[type="email"], input[type="tel"], select {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+textarea {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+}
+.btns {
+  text-align: center;
+}
+input[type="submit"] {
+  background: #f00;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+}
+input[type="reset"] {
+  background: #cac;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+input[type="reset"]:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+}
+/*=================contact終わり==================*/
+/*=================footer==================*/
+footer {
+  text-align: center;
+  color: #fff;
+}
+#top footer {
+  background-color: #ff6347;
+}
+#bs footer {
+  background-color: #006eb0;
+}
+#mission footer {
+  background-color: #6B8E23;
+}
+#contact footer {
+  background-color: #4b0082;
+}
+footer > small > span {
+  color: #f00;
+}
+/*=================footer終わり==================*/
+/*=================スマホ用==================*/
+@media (max-width:795px) {
+  /*=================全体==================*/
+  main {
+    width: 100%;
+  }
+  .contents {
+    width: 90%;
+  }
+  p {
+    font-size: 4vw;
+  }
+  /*==
+	}
+  }===============全体終わり==================*/
+  /*navbar drawer-menu*/
+  .drawer-navbar .drawer-menu li a {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .drawer-navbar .drawer-menu li:first-child a {
+    margin-top: 20px;
+  }
+  /*=================nav終わり==================*/
+  /*=================top==================*/
+  .flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .top-big p:nth-last-child(odd) img {
+    width: 80vw;
+    max-width: 300px;
+  }
+  .top-big p:nth-child(2) img {
+    width: 15vw;
+    max-width: 45px;
+  }
+  .bg-niku {
+    background-size: 60% auto;
+  }
+  #aori {
+    font-size: 13vw;
+  }
+  #top h2 {
+    font-size: 5vw;
+  }
+  .kikuchi-msg section, .bs-msg section {
+    width: 100%;
+  }
+  .about > p {
+    font-size: 4vw;
+  }
+  .top-message .sign {
+    margin-left: 0;
+  }
+  /*=================top終わり==================*/
+  /*=================bs==================*/
+  #bs-top-h2 {
+    margin-bottom: 20px;
+    font-size: 5vw;
+  }
+  .bs-top-p {
+    margin-right: 0;
+  }
+  #bs .flex {
+    text-align: center;
+  }
+  .modaal-content-container h3 {
+    font-size: 4.9vw;
+  }
+  .inc {
+    width: 100%;
+  }
+  .inc th, .inc td {
+    padding: 10px 0.5px;
+  }
+  /*=================bs終わり==================*/
+  /*=================mission==================*/
+  #mission-top-h2, #our-mission, #mission ol h3 {
+    font-size: 5vw;
+  }
+  /*=================mission終わり==================*/
+  /*=================contact==================*/
+  #contact h2 {
+    font-size: 5vw;
+  }
+  form {
+    width: 100%;
+  }
+  .label {
+    width: 50%;
+    margin-bottom: 5px;
+    font-size: 4vw;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .inputs {
+    width: 100%;
+  }
+  #mission ol li {
+    height: 100px;
+  }
+  /*=================contact終わり==================*/
+}
+/*=================スマホ用終わり==================*/
