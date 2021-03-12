@@ -4,5 +4,5 @@
 　　　　　　　このサイトはWordPressのテーマ化、及びオンラインサーバーへの適応も行いました。  
 　　　　　　　→(http://fkt31.starfree.jp/)  
 対象ブラウザ：PC,スマートフォン  
-使用ツール　：Dreamweaver  
+使用ツール　：Photoshop・Illustrator・Dreamweaver  
 製作期間　　：６日間
